@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #264653;
+        }
+        form {
+            max-width: 400px;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+        label {
+            font-weight: bold;
+            margin-top: 10px;
+            display: block;
+            color: #264653;
+        }
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="checkbox"] {
+            width: auto;
+            margin-right: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            font-size: 18px;
+            background: #e76f51;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+        button:hover {
+            background: #d35441;
+        }
+        .student-info {
+            margin-top: 300px;
+            padding: 10px;
+            background: #264653;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Tour Booking Form</h1>
+
+    <form>
+        <label for="tour">Select Tour Package:</label>
+        <select id="tour" name="tour">
+            <option value="small-group">Small Group (10-15 people)</option>
+            <option value="standard-group">Standard Group (35-40 people)</option>
+        </select>
+
+        <label>
+            <input type="checkbox" name="flight"> Need flight tickets? (Join Land)
+        </label>
+
+        <label for="passengers">Number of Travelers:</label>
+        <input type="number" id="passengers" name="passengers" min="1" required>
+
+        <label for="name">Contact Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Contact Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <button type="submit">Submit Booking</button>
+    </form>
+
+    <div class="student-info">Student ID: 6733257321 | Name: Siwakorn Kaewsaad</div>
+
+</body>
+</html>

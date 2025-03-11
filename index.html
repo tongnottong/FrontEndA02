@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Booking</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f4f4f4;
+            text-align: center;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #264653;
+            color: white;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .tours {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .tour {
+            flex: 1;
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .tour img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .book-btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            font-size: 20px;
+            background: #e76f51;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+            transition: background 0.3s;
+        }
+        .book-btn:hover {
+            background: #d35441;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h2>Tour Packages</h2>
+        <span>Student ID: 6733257321 | Name: Siwakorn Kaewsaad</span>
+    </header>
+    <div class="container">
+        <div class="tours">
+            <div class="tour">
+                <h3>Beach Paradise</h3>
+                <img src="beach.jpg" alt="Beach Tour">
+                <p>Enjoy a beautiful beach getaway with stunning views.</p>
+            </div>
+            <div class="tour">
+                <h3>Mountain Adventure</h3>
+                <img src="mountain.jpg" alt="Mountain Tour">
+                <p>Explore the mountains and enjoy hiking adventures.</p>
+            </div>
+            <div class="tour">
+                <h3>City Exploration</h3>
+                <img src="city.jpg" alt="City Tour">
+                <p>Discover the hidden gems of the city with guided tours.</p>
+            </div>
+        </div>
+        <a href="booking.html" class="book-btn">Book a Tour</a>
+    </div>
+</body>
+</html>
